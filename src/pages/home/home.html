@@ -3,7 +3,6 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -29,10 +28,18 @@
       <h2>言語・フレームワーク</h2>
     </ion-card-header>
     <ion-card-content>
-      <h2>Github</h2>
-      <canvas #doughnutCanvas></canvas>
-      <h2>プロジェクトで利用</h2>
-      <p>Java, Kotlin, Angluar, ionic, TypeScript, Spring boot, AWS Lambda</p>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h2>Github</h2>
+            <canvas #doughnutCanvas></canvas>
+          </ion-col>
+          <ion-col>
+            <h2>プロジェクトで利用</h2>
+            <p>Java, Kotlin, Angluar, ionic, TypeScript, Spring boot, AWS Lambda</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-card-content>
   </ion-card>
 
