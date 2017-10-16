@@ -3,10 +3,10 @@ import {NavController} from 'ionic-angular';
 import {Chart} from 'chart.js';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-user-detail',
+  templateUrl: 'user-detail.html'
 })
-export class HomePage {
+export class UserDetailPage {
 
   @ViewChild('doughnutCanvas') doughnutCanvas;
 

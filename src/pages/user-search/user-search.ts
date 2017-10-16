@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {HomePage} from "../home/home";
+import {UserDetailPage} from "../user-detail/user-detail";
 
 /**
  * Generated class for the UserSearchPage page.
@@ -26,7 +26,7 @@ export class UserSearchPage {
 
 
   goToUserDetail() {
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push(UserDetailPage);
   }
 
 }
