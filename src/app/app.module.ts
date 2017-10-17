@@ -8,12 +8,16 @@ import {UserSearchPage} from "../pages/user-search/user-search";
 
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
+import {UserRegistPage} from "../pages/user-regist/user-regist";
+import {CompanyRegistPage} from "../pages/company-regist/company-regist";
 
 @NgModule({
   declarations: [
     MyApp,
     UserDetailPage,
-    UserSearchPage
+    UserSearchPage,
+    UserRegistPage,
+    CompanyRegistPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +27,9 @@ import {SplashScreen} from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     UserDetailPage,
-    UserSearchPage
+    UserSearchPage,
+    UserRegistPage,
+    CompanyRegistPage
   ],
   providers: [
     StatusBar,
