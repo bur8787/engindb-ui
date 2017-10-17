@@ -10,9 +10,7 @@ export class UserDetailPage {
 
   @ViewChild('doughnutCanvas') doughnutCanvas;
 
-  barChart: any;
   doughnutChart: any;
-  lineChart: any;
 
   constructor(public navCtrl: NavController) {
 

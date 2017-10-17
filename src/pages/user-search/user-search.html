@@ -12,18 +12,28 @@
       <ion-icon name="menu"></ion-icon>
     </button>
   </ion-navbar>
+  <ion-toolbar>
+    <ion-searchbar style="width: 80%"
+                   [showCancelButton]="shouldShowCancel">
+    </ion-searchbar>
+  </ion-toolbar>
 </ion-header>
 
 
 <ion-content padding>
-  <ion-searchbar
-    [showCancelButton]="shouldShowCancel">
-  </ion-searchbar>
+  <ion-grid style="position: fixed; height: 100vh; margin: 0 0; padding: 0 0; top: 112px">
+    <ion-row justify-content-end align-items-center style="height: 100%">
+      <ion-col col-4 style="height: 100%; padding: 0 0;">
+        <ion-card style="height: 100%; padding: 0 0; margin: 0 0;">
+          <canvas style="top: 50px; height: 40%; width: 100%; position: relative;" #doughnutCanvas></canvas>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
   <ion-grid>
     <ion-row>
-      <ion-col>
+      <ion-col col-8>
         <ion-card (click)="goToUserDetail()">
-          <img src="../../assets/img/computer_side_man.png"/>
           <ion-card-content>
             <ion-card-title>
               Takahiro Suzuki
@@ -56,44 +66,10 @@
           </ion-row>
         </ion-card>
       </ion-col>
-      <ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-8>
         <ion-card (click)="goToUserDetail()">
-          <img src="../../assets/img/computer_side_man.png"/>
-          <ion-card-content>
-            <ion-card-title>
-              Takahiro Suzuki
-            </ion-card-title>
-            <ion-badge item-end>Java</ion-badge>
-            <ion-badge item-end>Angular</ion-badge>
-            <ion-badge item-end>TypeScript</ion-badge>
-            <ion-badge item-end>Kotlin</ion-badge>
-            <br>
-            <br>
-            <ion-badge item-end>
-              <ion-icon name="logo-github"></ion-icon>
-              140
-            </ion-badge>
-            <ion-badge item-end>Qiita 12</ion-badge>
-          </ion-card-content>
-          <ion-row no-padding text-center>
-            <ion-col>
-              <button ion-button clear small icon-start>
-                <ion-icon name='ios-mail'></ion-icon>
-                Contact
-              </button>
-            </ion-col>
-            <ion-col>
-              <button ion-button clear small icon-start>
-                <ion-icon name='star'></ion-icon>
-                Favorite
-              </button>
-            </ion-col>
-          </ion-row>
-        </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card (click)="goToUserDetail()">
-          <img src="../../assets/img/computer_side_man.png"/>
           <ion-card-content>
             <ion-card-title>
               Takahiro Suzuki
