@@ -10,6 +10,10 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {UserRegistPage} from "../pages/user-regist/user-regist";
 import {CompanyRegistPage} from "../pages/company-regist/company-regist";
+import {ContactPage} from "../pages/contact/contact";
+import {TermsPage} from "../pages/terms/terms";
+import {HomePage} from "../pages/home/home";
+import {ContactUsPage} from "../pages/contact-us/contact-us";
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import {CompanyRegistPage} from "../pages/company-regist/company-regist";
     UserDetailPage,
     UserSearchPage,
     UserRegistPage,
-    CompanyRegistPage
+    CompanyRegistPage,
+    ContactPage,
+    ContactUsPage,
+    TermsPage,
+    HomePage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +37,11 @@ import {CompanyRegistPage} from "../pages/company-regist/company-regist";
     UserDetailPage,
     UserSearchPage,
     UserRegistPage,
-    CompanyRegistPage
+    CompanyRegistPage,
+    ContactPage,
+    ContactUsPage,
+    TermsPage,
+    HomePage
   ],
   providers: [
     StatusBar,
