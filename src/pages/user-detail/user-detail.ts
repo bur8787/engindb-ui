@@ -25,7 +25,7 @@ export class UserDetailPage {
       data: {
         labels: ["Java", "Angular", "TypeScript", "Kotlin"],
         datasets: [{
-          data: [5, 2, 2, 1],
+          data: [5, 2, 2, 1, 3],
           backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
             'rgba(54, 162, 235, 0.2)',

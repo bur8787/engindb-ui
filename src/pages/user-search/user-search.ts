@@ -28,15 +28,16 @@ export class UserSearchPage {
   ionViewDidLoad() {
     this.doughnutChart = new Chart(this.doughnutCanvas.nativeElement, {
 
-      type: 'bar',
+      type: 'polarArea',
       data: {
         labels: ["Java", "Angular", "TypeScript", "Kotlin"],
         datasets: [{
-          data: [5, 2, 2, 1],
+          data: [5, 2, 2, 3, 1],
           backgroundColor: [
             'rgb(255, 99, 132)',
             'rgb(54, 162, 235)',
             'rgb(255, 206, 86)',
+            'rgb(255, 6, 86)',
             'rgb(75, 192, 192)'
           ],
         }]
@@ -46,22 +47,6 @@ export class UserSearchPage {
           display: false
         },
         responsive: false,
-        scales: {
-          yAxes: [{
-            ticks: {
-              display: false,
-              beginAtZero:true
-            },
-            gridLines: {
-              display: false,
-            }
-          }],
-          xAxes: [{
-            gridLines: {
-              display: false,
-            }
-          }]
-        }
       }
     });
 
